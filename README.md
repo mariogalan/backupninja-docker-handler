@@ -2,7 +2,7 @@
 
 A handler for backup docker containers using [backupninja](https://0xacab.org/riseuplabs/backupninja)
 
-Based on the information contained on this page on [how to backup docker containers](https://bobcares.com/blog/docker-backup/)
+Based on the information contained on this page on [how to backup docker containers](https://bobcares.com/blog/docker-backup/) and [how to create backupninja handlers](https://labs.riseup.net/code/projects/backupninja/wiki/Handlers)
 
 # Installation instructions
 - Clone or download this repository
