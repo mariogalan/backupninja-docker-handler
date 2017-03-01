@@ -1,6 +1,6 @@
 # backupninja docker handler
 
-A handler for backup docker containers with [backupninja](https://0xacab.org/riseuplabs/backupninja)
+A handler for backup docker containers using [backupninja](https://0xacab.org/riseuplabs/backupninja)
 
 Based on the information contained on this page on [how to backup docker containers](https://bobcares.com/blog/docker-backup/)
 
