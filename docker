@@ -1,0 +1,23 @@
+# backupninja-docker-handler
+
+getconf backupdir       /var/backups/docker
+
+setsection containers
+getconf container_id
+
+if [ ! -d "$backupdir" ]
+then
+   mkdir -p "$backupdir" || fatal "Can not make directory $backupdir"
+fi
+
+if [ ! -w "$backupdir" ]
+then
+   fatal "Directory $backupdir is not writable"
+fi
+
+for id in $container_id; do
+  info "Container $id"
+  docker commit -p $id $id
+  docker save -o $backupdir/$id.tar $id
+  docker rmi $id
+done

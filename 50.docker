@@ -1,0 +1,6 @@
+#This is an example file. Use your own container ids.
+# You can get the container id of your running containers with the command "docker ps".
+
+[containers]
+container_id = 4d793214552d
+container_id = 8aab35cc0801
